@@ -1,0 +1,47 @@
+#Ignore thumbnails created by Windows
+Thumbs.db
+#Ignore files built by Visual Studio
+*.obj
+*.exe
+*.config
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+.vs/
+
+#Custom files
+!NuGet.Config
+!src/EventHandler.Service/App.config
+/CommonAssemblyInfo.cs
+_Scripts/tools/*
+!_Scripts/tools/Inno
+!_Scripts/tools/nuget.exe
+!_Scripts/tools/packages.config
+!signtool.exe
+Setups
+_Artifacts/*
+#Nuget packages folder
+packages/
+
+# JetBrains Rider
+.idea/
