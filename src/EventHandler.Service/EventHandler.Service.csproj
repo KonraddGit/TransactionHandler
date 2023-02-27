@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<Nullable>enable</Nullable>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<PlatformTarget>x86</PlatformTarget>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.22" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.22" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="3.1.22" />
+		<PackageReference Include="NLog" Version="4.7.13" />
+		<PackageReference Include="NLog.Config" Version="4.7.13" />
+		<PackageReference Include="NLog.Schema" Version="4.7.13" />
+		<PackageReference Include="NLog.Web.AspNetCore" Version="4.14.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EventHandler.Application\EventHandler.Application.csproj" />
+		<ProjectReference Include="..\EventHandler.Infrastructure\EventHandler.Infrastructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="NLog.config">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>
